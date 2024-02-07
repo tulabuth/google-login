@@ -17,7 +17,7 @@ function App() {
              onSuccess={async (credentialResponse) => {
                console.log(credentialResponse);
                const { data } = await axios.post(
-                 "http://localhost:8080/google/redirect",{
+                 "http://localhost:3003/member/auth/google-login",{
                   token: credentialResponse.credential,
                  }
                                 );
